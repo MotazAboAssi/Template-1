@@ -1,0 +1,1325 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-title {
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+.section-hr {
+    width: 5%;
+    height: 4px;
+    background-color: blue;
+    margin: 10px auto 40px auto;
+}
+
+.section-container {
+    width: 80%;
+    margin: auto;
+}
+
+.overlay {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* image on background///////////////////// */
+
+.background-in-image {
+
+    width: 100%;
+    height: 45vh;
+
+
+    position: relative;
+}
+
+.backgroundImage-overlay {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.backgroundImage-container {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+
+.backgroundImage-parent {
+    padding: 8% 0px;
+}
+
+/* //////////////////////////////////////////*/
+
+
+
+
+
+
+
+/* HEADER ......................................... */
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 20;
+}
+
+.header-container-parent {
+    overflow: auto;
+}
+
+.header-container-parent-img {
+    width: 100px;
+    height: 40px;
+}
+
+.header-container-parent-navigation {
+    float: right;
+    padding-top: 15px;
+}
+
+.header-container-parent-navigation li {
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 17px;
+    color: white;
+
+    padding-bottom: 5px;
+
+    position: relative;
+
+
+}
+
+.navigation-active div {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+
+    bottom: 0;
+    left: 0;
+
+    background-color: cornflowerblue;
+
+}
+
+.header-container-parent-navigation li::after {
+    position: absolute;
+    content: "";
+
+    width: 0%;
+    height: 4px;
+
+    bottom: 0;
+    left: 0;
+
+    background-color: cornflowerblue;
+
+}
+
+.header-container-parent-navigation li:hover::after {
+    width: 100%;
+    height: 4px;
+
+    transition: 1s;
+}
+
+.header-container-parent-navigation li a {
+    color: white;
+}
+
+/* /HEADER ......................................... */
+
+/* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+/* HOME ............................................ */
+.home-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/ddd.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.home-container-overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.home-container-overlay-div {
+    width: 60%;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    color: #fff;
+}
+
+.home-container-overlay-div-title {
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+.home-container-overlay-div-p {
+    letter-spacing: 3px;
+    padding: 15px 0px;
+}
+
+.home-container-overlay-div-btn {
+    background-color: white;
+    color: black;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 15px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.btn-editor {
+    background-color: blue;
+    color: #fff;
+    margin: 0px 10px;
+}
+
+.home-container-overlay-div-btn:hover {
+    opacity: 0.7;
+}
+
+/* /HOME ....................................................... */
+
+/* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+/* Welcome To Website .......................................... */
+
+.welcome {
+    width: 100%;
+}
+
+.welcome-parent {
+    padding: 10% 0px 15% 0px;
+    text-align: center;
+}
+
+.welcome-divAllCoursers {
+    overflow: auto;
+
+    padding: 20px;
+
+    margin: 45px 0px;
+}
+
+.welcome-divAllCoursers-course {
+    padding: 10px;
+
+
+    float: left;
+
+    width: 30%;
+
+    border: 1px solid black;
+
+    position: relative;
+
+}
+
+.welcome-divAllCoursers-course-mid {
+    margin: 0px 5%;
+}
+
+.welcome-divAllCoursers-course i {
+    color: cornflowerblue;
+    font-size: 40px;
+    padding: 15px 0px;
+}
+
+.welcome-divAllCoursers-course h2 {
+    text-transform: capitalize;
+}
+
+.welcome-divAllCoursers-course:hover h2 {
+    color: white;
+}
+
+.welcome-divAllCoursers-course p {
+    letter-spacing: 2px;
+    padding: 15px;
+    color: gray;
+    font-size: 20px;
+}
+
+.welcome-divAllCoursers-course a {
+    color: cornflowerblue;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.welcome-divAllCoursers-course::after {
+    position: absolute;
+    content: "";
+
+    width: 0%;
+    height: 0%;
+
+    top: 0;
+    left: 0;
+
+    background-color: black;
+
+    z-index: -1;
+}
+
+.welcome-divAllCoursers-course:hover::after {
+    width: 100%;
+    height: 100%;
+
+    transition: 1s;
+
+}
+
+
+/* /Welcome To Website .......................................... */
+
+/* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+/* Featured Works ............................................... */
+
+.featured {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.featured-parent {
+    padding: 10% 0px;
+
+    text-align: center;
+}
+
+
+.featured-parent-divAllItem {
+
+    width: 100%;
+
+    overflow: auto;
+
+    padding: 10px;
+}
+
+.featured-view-item {
+    float: left;
+
+    width: 30%;
+
+    position: relative;
+
+    padding: 30px 30px;
+
+    margin: 20px 0px;
+
+    font-size: 20px;
+
+}
+
+.featured-view-item-mid {
+    margin: 20px 5%;
+}
+
+.featured-view-item img {
+    width: 300px;
+    height: 300px;
+}
+
+.featured-overlay {
+    visibility: hidden;
+}
+
+.featured-view-item:hover .overlay {
+    visibility: visible;
+}
+
+
+.featured-view-item-info {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.featured-view-item-info h2 {
+    color: cornflowerblue;
+    text-transform: uppercase;
+
+    font-size: 20px;
+}
+
+.featured-view-item-info p {
+    color: white;
+    padding: 10px 0px;
+}
+
+.featured-view-item-info a i {
+    background-color: cornflowerblue;
+    color: rgba(0, 0, 255, 0.493);
+
+    width: 40px;
+    height: 40px;
+
+    line-height: 40px;
+
+
+}
+
+/* /Featured Works ............................................... */
+
+/* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+/* What to offer ................................................. */
+
+
+.offer-parent {
+    padding: 10% 0px 5% 0px;
+    text-align: center;
+}
+
+
+.offer-divAllOffers {
+    overflow: auto;
+    margin-top: 60px;
+}
+
+.offer-divAllOffers-item {
+    float: left;
+    overflow: auto;
+
+    padding: 30px 10px;
+
+    width: 30%;
+
+    margin: 10px 0px;
+
+    position: relative;
+
+    border: 1px solid gray;
+}
+
+.offer-divAllOffers-item-mid {
+    margin: 10px 5%;
+}
+
+
+.offer-divAllOffers-item i {
+    display: block;
+
+    float: left;
+
+    width: 12%;
+
+    font-size: 35px;
+
+    color: cornflowerblue;
+
+    margin-top: -10px;
+
+}
+
+.offer-item-info {
+
+    text-align: left;
+
+    width: 88%;
+
+    float: left;
+
+    padding-left: 5px;
+
+}
+
+.offer-item-info h2 {
+    text-transform: capitalize;
+
+}
+
+.offer-divAllOffers-item:hover .offer-item-info h2 {
+    color: white;
+}
+
+.offer-item-info p {
+    text-transform: capitalize;
+
+    color: gray;
+
+    padding: 15px 0px;
+
+    line-height: 25px;
+
+    font-size: 17px;
+}
+
+.offer-divAllOffers-item::after {
+    position: absolute;
+    content: "";
+
+    width: 0%;
+    height: 0%;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(48, 47, 47);
+
+    z-index: -1;
+}
+
+.offer-divAllOffers-item:hover::after {
+    width: 100%;
+    height: 100%;
+
+    transition: 0.5s;
+}
+
+/* /What to offer ................................................ */
+
+/* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+/* Why choose us ................................................. */
+
+.choose {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.choose-parent {
+    padding: 10% 0px;
+
+    overflow: auto;
+}
+
+.choose-info {
+    float: left;
+    width: 50%;
+
+    font-size: 20px;
+
+}
+
+
+
+.choose-info-hr {
+    width: 10%;
+    height: 4px;
+    background-color: blue;
+    margin: 10px 0px 40px 0px;
+}
+
+.choose-info-para {
+    color: gray;
+    padding: 20px 0px;
+    margin-top: -15px;
+}
+
+.choose-info-list li {
+    color: gray;
+    line-height: 30px;
+}
+
+.choose-info-list li i {
+    color: cornflowerblue;
+}
+
+.choose-img {
+    float: left;
+    width: 50%;
+
+    font-size: 30px;
+}
+
+.choose-img img {
+    width: 60%;
+    height: 50%;
+}
+
+.choose-img-list {
+    overflow: auto;
+    width: 50%;
+    margin: auto;
+}
+
+.choose-img-list li {
+    float: left;
+
+    color: gray;
+
+    width: 0;
+
+    margin: 1px 10px;
+
+}
+
+.choose-img-list li:hover,
+.choose-img-list .choose-img-list-active {
+    color: cornflowerblue;
+}
+
+/* /Why choose us ................................................. */
+
+/* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+/* image-in-background-1-with-achievements ........................ */
+
+
+.background1-in-image {
+    background: url(../images/ProgrammingLanguages.png) no-repeat center fixed;
+    background-size: cover;
+}
+
+
+.backgroundImage-achievementsView {
+    text-align: center;
+
+    overflow: auto;
+}
+
+.backgroundImage-achievement {
+    float: left;
+
+    width: 19%;
+
+    margin: 0px 2%;
+
+    color: white;
+}
+
+.backgroundImage-first-achievement {
+    margin-left: 6%;
+}
+
+.backgroundImage-last-achievement {
+    margin-right: 6%;
+}
+
+.backgroundImage-achievement i {
+    font-size: 30px;
+    color: cornflowerblue;
+}
+
+.backgroundImage-achievement h3 {
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+/* /image-in-background-1-with-achievements ....................... */
+
+/* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+/* pricing table .................................................. */
+
+.pricing-table {
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.pricing-parent {
+    padding: 10% 0px;
+    text-align: center;
+}
+
+
+.pricing-pricingView {
+    overflow: auto;
+    margin-top: 60px;
+
+}
+
+.pricing-pricingView-item {
+    float: left;
+
+    width: 30%;
+
+    border: 1px solid black;
+
+    padding: 30px;
+
+    position: relative;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.pricing-pricingView-item-mid {
+    margin: 0px 5%;
+}
+
+.pricing-pricingView-item h3 {
+    text-transform: uppercase;
+
+    padding-bottom: 10px;
+}
+
+.pricing-pricingView-item-square {
+    width: 100px;
+    height: 100px;
+
+    text-transform: uppercase;
+
+    border: 1px solid black;
+
+    border-radius: 50%;
+
+    padding: 15px 10px 10px 10px;
+
+    margin: auto;
+
+    color: black;
+}
+
+.dollar {
+    font-size: 30px;
+}
+
+.pricing-pricingView-item-descriptionList {
+    width: 200px;
+    padding: 15px 0px;
+    margin: auto;
+
+}
+
+.pricing-pricingView-item-descriptionList li {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.pricing-pricingView-item-btn {
+    padding: 5px 20px;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    color: white;
+    margin: 20px 0px 0px 0px;
+
+
+}
+
+.pricing-pricingView-item-btn:hover {
+    border: 1px solid black;
+    background-color: inherit;
+    color: black;
+
+
+
+}
+
+.pricing-pricingView-item::after {
+    z-index: -1;
+
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0%;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    opacity: 0;
+}
+
+.pricing-pricingView-item:hover::after {
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.5;
+
+    transition: 1s;
+
+}
+
+.pricing-pricingView-item:hover h3,
+.pricing-pricingView-item:hover .pricing-pricingView-item-square {
+    color: rgb(44, 114, 245);
+}
+
+
+/* /pricing table ................................................. */
+
+/* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+/* image in background 2 ......................................... */
+
+
+
+.background2-in-image {
+    background: url(../images/programmers-programming-motivational-code-text-hd-wallpaper-preview.jpg) no-repeat center fixed;
+    background-size: cover;
+
+}
+
+.backgroundImage-designersView {
+    overflow: auto;
+}
+
+.backgroundImage-designer {
+    width: 45%;
+    float: left;
+}
+
+.backgroundImage-designer-imgWithInfo {
+    overflow: auto;
+}
+
+.backgroundImage-designer-image {
+    float: left;
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+}
+
+.backgroundImage-designer-info {
+    padding: 30px 0px 0px 20%;
+}
+
+.backgroundImage-designer-info h2 {
+    color: white;
+    text-transform: capitalize;
+}
+
+.backgroundImage-designer-info span {
+    color: cornflowerblue;
+}
+
+.backgroundImage-designer-para {
+    color: whitesmoke;
+    width: 100%;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.backgroundImage-designer-right {
+    margin-left: 10%;
+}
+
+
+/* /image in background 2 ........................................ */
+
+/* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+/* our team ....................................................... */
+
+.team {
+    width: 100%;
+}
+
+.team-container {
+    width: 85%;
+}
+
+.team-container-parent {
+    text-align: center;
+    padding: 3% 0px;
+    margin-top: 40px;
+}
+
+
+
+.team-container-parent-divAllItemParent {
+    width: 100%;
+    overflow: auto;
+    margin-top: 75px;
+}
+
+.team-container-parent-divAllItem-item {
+    background-color: rgba(0, 0, 0, 0.1);
+    float: left;
+    width: 30%;
+
+}
+
+.team-container-parent-divAllItem-item {
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-item-mid {
+    margin: 0px 5%;
+}
+
+.team-container-parent-divAllItem-item-img {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.team-container-parent-divAllItem-item-img img {
+    width: 100%;
+    height: 200px;
+}
+
+.team-container-parent-divAllItem-item-overlay-img-overlay {
+    visibility: hidden;
+    z-index: 1;
+}
+
+.team-container-parent-divAllItem-item-overlay-img-overlay .team-item-overlay-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    margin-left: auto;
+}
+
+.team-container-parent-divAllItem-item-overlay-img-overlay .team-item-overlay-icon i {
+    line-height: 40px;
+}
+
+
+.team-container-parent-divAllItem-item-imgName {
+    padding: 10px 0px;
+    text-transform: capitalize;
+}
+
+.team-container-parent-divAllItem-item-imgInfo {
+    text-transform: uppercase;
+    color: gray;
+}
+
+.team-container-parent-divAllItem-item:hover .team-container-parent-divAllItem-item-overlay-img-overlay {
+    visibility: visible;
+}
+
+.team-container-parent-divAllItem-item:hover .team-container-parent-divAllItem-item-imgName {
+    color: white;
+}
+
+.team-container-parent-divAllItem-item:hover .team-container-parent-divAllItem-item-imgInfo {
+    color: rgb(79, 79, 236);
+}
+
+.team-container-parent-divAllItem-item::before {
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0%;
+
+    top: 0;
+    left: 0;
+
+    background-color:black;
+    opacity: 0;
+}
+
+.team-container-parent-divAllItem-item:hover::before {
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.3;
+    transition: 1s;
+}
+
+/* /our team ...................................................... */
+
+/* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+/* recent news ................................................... */
+
+.news {
+    width: 100%;
+}
+
+.news-container {
+    width: 90%;
+}
+
+.news-container-parent {
+    text-align: center;
+    padding: 5% 0px;
+}
+
+
+.news-container-parent-view-divAllItem {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    padding: 10px;
+    text-align: left;
+    overflow: auto;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.news-container-parent-view-divAllItem-item {
+    background-color: white;
+
+    float: left;
+
+    width: 32%;
+
+    padding: 20px;
+
+    position: relative;
+}
+
+.news-view-item-mid {
+    margin: 0px 2%;
+}
+
+.news-container-parent-view-divAllItem-item::after {
+
+    position: absolute;
+    content: "";
+    place-content: "";
+
+    width: 100%;
+    height: 0%;
+
+    top: 0;
+    left: 0;
+
+    background-color: cornflowerblue;
+    opacity: 0;
+
+}
+
+.news-container-parent-view-divAllItem-item:hover::after {
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.5;
+    transition: 1s;
+
+}
+
+
+.news-container-parent-view-divAllItem-item-img {
+    width: 100%;
+
+}
+
+.news-container-parent-view-divAllItem-item-icon li {
+    display: inline;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.news-container-parent-view-divAllItem-item-icon li i {
+    padding: 20px 10px;
+    color: cornflowerblue;
+}
+
+.news-container-parent-view-divAllItem-item-title {
+    font-size: 25px;
+}
+
+.news-container-parent-view-divAllItem-item-para {
+    padding: 20px 0px;
+    line-height: 20px;
+}
+
+.news-container-parent-view-divAllItem-item-link {
+    position: absolute;
+    color: cornflowerblue;
+    z-index: 1;
+
+}
+
+/* /recent news .................................................. */
+
+/* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+/* footer .......................................................... */
+
+.footer {
+    background-color: rgb(73, 72, 72);
+}
+
+.footer-container {
+    width: 30%;
+}
+
+.footer-container-parent {
+    padding: 8% 0px;
+    text-align: center;
+}
+
+.footer-container-parent-content {
+    padding: 10px;
+}
+
+.footer-container-parent-content-listFooter {
+    padding: 20px 0px;
+    overflow: auto;
+}
+
+.footer-container-parent-content-listFooter li {
+    display: inline;
+    padding: 0px 5px;
+}
+
+.footer-container-parent-content-listFooter li a i {
+    padding: 15px;
+    color: white;
+    background-color: cornflowerblue;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 11%;
+    height: 50px;
+
+}
+
+.footer-container-parent-content-img {
+    width: 250px;
+    height: 200px;
+
+}
+
+.footer-container-parent-content-para,
+.footer-container-parent-content-para a {
+    color: gray;
+    text-transform: uppercase;
+}
+
+.footer-container-parent-content-para a:hover {
+    text-transform: capitalize;
+    color: beige;
+    padding: 0px 9px;
+}
+
+
+/* /footer ......................................................... */
